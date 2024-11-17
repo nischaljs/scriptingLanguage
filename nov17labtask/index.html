@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>November 17</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="form" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name" required style="margin: 5px 0; padding: 5px; width: 100%;">
+        
+        <label for="email">Enter your email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required style="margin: 5px 0; padding: 5px; width: 100%;">
+        
+        <button type="submit" style="padding: 10px 20px; margin-top: 10px;">Submit Form</button>
+    </form>
+
+    <div>
+        <ul id="unorderedlist" style="list-style: none; padding: 0;">
+            <li style="font-weight: bold;">List of participants:</li>
+        </ul>
+    </div>
+
+    <div id="totalParticipants" style="margin-top: 10px;">
+        <h6>Total Participants</h6>
+    </div>
+
+    <div id="toast" style="display: none; margin-top: 10px; padding: 10px; background: #d4edda;  color: #155724;">
+        Submitted successfully
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
