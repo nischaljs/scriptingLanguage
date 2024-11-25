@@ -98,3 +98,32 @@ span {
     font-size: medium;
     font-weight: 400;
 }
+
+/* password aakha  */
+.passBox i{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.passBox input{
+    padding-right: 45px;
+}
+
+.passBox{
+    display: flex;
+   position: relative;
+}
+
+.no-error{
+    display: none;
+}
+.error{
+    display: flex;
+}

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
     <div id="form-container">
         <h3>Registration Form</h3>
@@ -13,27 +16,33 @@
             <div class="collection">
                 <label for="username">Username:</label>
                 <input type="text" name="username" placeholder="Enter your name">
-                <span>Error message here</span>
+                <span class="username-error no-error">Error message here</span>
             </div>
             <div class="collection">
                 <label for="email">Email:</label>
                 <input type="email" name="email" placeholder="Enter your email">
-                <span>Error message here</span>
+                <span class="email-error no-error">Error message here</span>
             </div>
             <div class="collection">
                 <label for="password">Password:</label>
-            <input type="password" name="username" placeholder="Enter your password">
-            <span>Error message here</span>
+                <div class="passBox">
+                    <input type="password" name="password" placeholder="Enter your password">
+                <i class="ri-eye-off-line"></i>
+                </div>
+                <span class="password-error no-error">Error message here</span>
             </div>
             <div class="collection">
                 <label for="cofirmpass">Confirm password:</label>
-            <input type="password" name="cofirmpass" placeholder="Enter your password again">
-            <span>Error message here</span>
+               <div class="passBox">
+                <input type="password" name="cofirmpass" placeholder="Enter your password again">
+                <i class="ri-eye-off-line "></i>
+               </div>
+                <span class="confirm-password-error no-error">Error message here</span>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </div>
-    
 </body>
 <script src="script.js"></script>
+
 </html>
