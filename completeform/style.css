@@ -1,0 +1,100 @@
+/* Import the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 26vw;
+    background-color: rgb(241, 241, 241);
+    box-shadow: black 2px 2px;
+    border-radius: 13px;
+    padding: 2vw;
+    filter: drop-shadow(6px 6px 6px #000000ad);
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 1.4vw;
+    margin-bottom: 2vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 2vw;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 0.3vw; 
+}
+
+.collection {
+    margin-bottom: 2vw;
+}
+
+label {
+    margin-bottom: 0.3vw;
+    font-size: larger;
+}
+
+input::placeholder {
+    color: rgb(70, 69, 69);
+    font-size: medium;
+}
+
+
+.correct-input {
+    border: 3px solid green;
+}
+
+.incorrect-input {
+    border: 3px solid red;
+}
+
+button {
+    padding: 0.8vw 0;
+    border-radius: 6px;
+    width: full;
+    background-color: rgba(0, 0, 255, 0.918);
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(9, 9, 255, 0.726);
+}
+
+span {
+    color: rgba(255, 0, 0, 0.785);
+    font-size: medium;
+    font-weight: 400;
+}

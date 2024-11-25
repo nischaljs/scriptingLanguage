@@ -77,7 +77,7 @@ function showToast() {
 }
 
 function changeBackgroundOfPage() {
-    form.style.backgroundColor = "red";
+    form.style.backgroundColor = "#fd5c50";
 }
 
 updateTotalParticipants(registeredParticipants);
