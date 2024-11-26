@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
-    font-style: normal;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -18,79 +16,112 @@ body {
 }
 
 #container {
-    padding: 1vw;
-    background-color: rgb(241, 241, 241);
-    border-radius: 12px;
-}
-
-#container h3 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-#container #todos {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #b6b6b6;
-    gap: 1vw;
     width: 100%;
-    padding: 1vw 1.3vw;
-    margin-bottom: 1rem;
+    max-width: 400px;
+    padding: 20px;
+    background: #fcfcfc;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #todos ul {
     list-style: none;
-    display: flex;
-    gap: 1vw;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 #todos ul li {
     display: flex;
     align-items: center;
-    gap: 0.6vw;
-    font-size: 1.2rem;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
-#todo-checkbox {
+#todos ul li:hover {
+    transform: translateY(-2px);
+    background: #f0f0f0;
+}
+
+.todo-checkbox {
     height: 20px;
     width: 20px;
-    background-color: #eee;
     cursor: pointer;
+    accent-color: green;
+}
+
+#cross {
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #ffdddd;
+    border-radius: 50%;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#cross:hover {
+    background: #ffbbbb;
+    transform: scale(1.1);
 }
 
 #add-todo-section {
-    margin-top: 0.4vw;
     display: flex;
-    gap: 0.8vw;
     flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 #input-todo {
-    width: 100%;
-    padding: 0.5vw 1vw;
-    outline: none;
-    border: none;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-#input-todo::placeholder {
-    font-size: 1rem;
+#input-todo:focus {
+    border-color: #2a2a72;
 }
-
 
 #add-todo {
-    width: full;
-    padding: 0.5vw 1vw;
-    background-color: green;
-    border-radius: 8px;
+    width: 100%;
+    padding: 10px 15px;
+    background: #2a2a72;
+    color: #fff;
     border: none;
-    cursor: pointer;
-    color: white;
+    border-radius: 8px;
     font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 #add-todo:hover {
-    background-color: rgb(4, 90, 4);
+    background: #1f1f5a;
 }

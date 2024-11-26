@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Filtering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Product List</h1>
+        <div class="filters">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+
+            <label for="price">Price Range:</label>
+            <select id="price">
+                <option value="all">All</option>
+                <option value="low">Below $50</option>
+                <option value="medium">$50 - $100</option>
+                <option value="high">Above $100</option>
+            </select>
+        </div>
+
+        <ul id="product-list">
+
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

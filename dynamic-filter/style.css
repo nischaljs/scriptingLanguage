@@ -1,0 +1,114 @@
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #222;
+  }
+  
+  
+  .filters {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  .filters label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .filters select {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .filters select:hover {
+    border-color: #007bff;
+    background-color: #ffffff;
+  }
+  
+  
+  #product-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  #product-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #product-list li span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #product-list li span:nth-child(2) {
+    color: #007bff;
+  }
+  
+  
+  #product-list li.no-products {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+    }
+  
+    #product-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #product-list li span {
+      font-size: 14px;
+    }
+  }
+  
