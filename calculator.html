@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Simple Calculator</h2>
+  <input id="num1" type="number" placeholder="Enter first number">
+  <input id="num2" type="number" placeholder="Enter second number">
+  <select id="operator">
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+  </select>
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+  <script>
+    function calculate() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const operator = document.getElementById('operator').value;
+      let result;
+      switch (operator) {
+        case 'add':
+          result = num1 + num2;
+          break;
+        case 'subtract':
+          result = num1 - num2;
+          break;
+        case 'multiply':
+          result = num1 * num2;
+          break;
+        case 'divide':
+          result = num1 / num2;
+          break;
+        default:
+          result = 'Invalid Operation';
+      }
+      document.getElementById('result').innerText = `Result: ${result}`;
+    }
+  </script>
+</body>
+</html>
